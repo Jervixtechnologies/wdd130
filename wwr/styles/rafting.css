@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #1d3b6d;
+    --secondary-color: #4b6b9b;
+    --accent1-color: #333;
+    --accent2-color: #ffffff;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -56,7 +65,7 @@ h1 {
     /* white text - make sure is enough contrast with the background-color */
 }
 
-article {
+.hero article {
     position: absolute;
 }
 
