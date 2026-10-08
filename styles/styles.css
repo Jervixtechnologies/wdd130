@@ -9,25 +9,44 @@
     --text-align: center;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 body {
     font-size: 16px;
     font-family: Roboto, Arial, sans-serif;
 }
 
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 1.2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: darkblue;
     padding: .5rem;
+    border-bottom: 1px solid #000;
 }
 
 img {
@@ -44,7 +63,8 @@ p {
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 main img {
@@ -54,13 +74,15 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 2rem 0 1rem 1rem;
 }
 
 aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
