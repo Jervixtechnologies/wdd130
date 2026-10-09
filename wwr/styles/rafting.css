@@ -102,8 +102,7 @@ h1 {
     margin-left: 15px;
 }
 
-.history-section h2,
-.adventures-section h2 {
+main section h2 {
     text-align: center;
     margin: 30px 0 15px;
 }
@@ -126,29 +125,33 @@ h1 {
 .adventures-container {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    padding: 0 16px;
+    gap: 12px;
+    padding: 10px 16px;
 }
 
 .adventures-container figure {
     flex: 1;
     text-align: center;
-    background-color: #eee;
-    padding: 8px;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .adventures-container img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 4px;
 }
 
 .adventures-container figcaption {
     font-size: 0.8rem;
     font-weight: bold;
-    margin-top: 6px;
-    color: var(--accent1-color);
+    margin-top: 8px;
+    color: var(--primary-color);
 }
 
 footer {
@@ -165,7 +168,13 @@ footer {
     gap: 12px;
 }
 
+.socialmedia a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
 .socialmedia img {
     width: 24px;
     height: 24px;
+    display: block;
 }
