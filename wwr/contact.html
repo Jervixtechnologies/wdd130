@@ -52,15 +52,22 @@
             <input type="email" id="useremail" name="useremail" placeholder="Placeholder" required>
           </div>
 
+          <!-- HTML Structure Fix: Separated input fields and labels -->
           <div class="form-item purpose-row">
             <span class="field-label">Message Purpose</span>
             <div class="radio-options">
-              <label><input type="radio" name="purpose" value="general" checked> General
-                Inquiry</label>
-              <label><input type="radio" name="purpose" value="reservation"> Reservation
-                Question</label>
-              <label><input type="radio" name="purpose" value="suggestion"> Website
-                Suggestion</label>
+              <div class="radio-pair">
+                <input type="radio" id="purpose-general" name="purpose" value="general" checked>
+                <label for="purpose-general">General Inquiry</label>
+              </div>
+              <div class="radio-pair">
+                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                <label for="purpose-reservation">Reservation Question</label>
+              </div>
+              <div class="radio-pair">
+                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                <label for="purpose-suggestion">Website Suggestion</label>
+              </div>
             </div>
           </div>
 
@@ -84,7 +91,7 @@
       <div class="team-grid">
         <figure class="profile-card">
           <div class="avatar-placeholder">
-            <img src="images/CEO.jpg" alt="Jeremiah Robinson, Lead River Guide">
+            <img src="images/ceo.jpg" alt="Jeremiah Robinson, Lead River Guide">
           </div>
           <figcaption><strong>Jeremiah Robinson</strong><br>Lead River Guide</figcaption>
         </figure>
